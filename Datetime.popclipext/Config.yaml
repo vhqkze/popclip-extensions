@@ -1,0 +1,7 @@
+name: Datetime
+identifier: vhqkze.datetime
+icon: symbol:calendar
+after: paste-result
+entitlements: [dynamic]
+restore pasteboard: true
+module: datetime.ts
