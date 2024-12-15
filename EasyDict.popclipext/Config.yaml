@@ -1,0 +1,12 @@
+# popclip
+name: EasyDict
+identifier: vhqkze.easydict
+icon: iconify:ri:translate
+popclip version: 4151
+app:
+  name: EasyDict
+  link: https://github.com/tisfeng/Easydict
+  bundle identifiers:
+    - com.izual.Easydict
+  check installed: true
+url: easydict://query?text={popclip text}
