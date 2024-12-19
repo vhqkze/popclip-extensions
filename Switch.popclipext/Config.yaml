@@ -1,0 +1,22 @@
+name:
+  en: Switch
+  zh-hans: 开关
+identifier: vhqkze.switch
+icon: symbol:moonphase.last.quarter
+requirements:
+  - text
+  - paste
+after: paste-result
+restore pasteboard: true
+entitlements: [dynamic]
+module: switch.ts
+options:
+  - identifier: words
+    label:
+      en: Words
+      zh-hans: 词组
+    type: string
+    description:
+      en: 'Please enter one or more word pairs in the input box, separated by English commas. Each word pair should consist of two words, separated by an English hyphen. For example: true-false,on-off'
+      zh-hans: '请在输入框中填写1个或多个词语对，词语对之间用英文逗号分隔，每个词语对包含两个词语，这两个词语之间用英文中划线分隔。例如：true-false,on-off'
+    default value: true-false,on-off
