@@ -1,0 +1,7 @@
+name: Minify JSON
+identifier: vhqkze.minifyjson
+icon: iconify:gg:compress
+regex: (?s)^\s*(\[.*\]|\{.*\})\s*$
+after: paste-result
+shell script file: minify_json.zsh
+interpreter: "/bin/zsh"
