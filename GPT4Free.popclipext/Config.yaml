@@ -1,0 +1,118 @@
+# popclip
+name: GPT4Free
+identifier: vhqkze.raycast.gpt4free
+description: Send text to GPT4Free.
+icon: iconify:mingcute:ai-line
+popclip version: 4151
+app:
+  name: Raycast
+  link: https://www.raycast.com/
+  bundle identifiers:
+    - com.raycast.macos
+  check installed: true
+options:
+  - identifier: explain
+    type: boolean
+    label: Explain
+    default value: true
+  - identifier: askai
+    type: boolean
+    label: AskAI
+    default value: true
+  - identifier: summarize
+    type: boolean
+    label: Summarize
+    default value: true
+  - identifier: continue
+    type: boolean
+    label: Continue Text
+    default value: true
+  - identifier: shorter
+    type: boolean
+    label: Make Shorter
+    default value: true
+  - identifier: longer
+    type: boolean
+    label: Make Longer
+    default value: true
+  - identifier: friendly
+    type: boolean
+    label: to Friendly
+    default value: true
+  - identifier: professional
+    type: boolean
+    label: to Professional
+    default value: true
+  - identifier: improve
+    type: boolean
+    label: Improve Writing
+    default value: true
+  - identifier: translate
+    type: boolean
+    label: Translate
+    default value: true
+  - identifier: fix
+    type: boolean
+    label: Fix Code
+    default value: true
+  - identifier: image
+    type: boolean
+    label: Generate Images
+    default value: true
+actions:
+  - title: Explain
+    icon: iconify:hugeicons:ai-idea
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/explain
+    requirements: [text, option-explain=1]
+  - title: AskAI
+    icon: iconify:hugeicons:ai-chat-02
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/askAI?arguments={"query":"***"}
+    requirements: [text, option-askai=1]
+  - title: Summarize
+    icon: iconify:mingcute:refresh-4-ai-line
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/summarize
+    requirements: [text, option-summarize=1]
+  - title: Continue Text
+    icon: iconify:mingcute:pencil-2-ai-line
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/continue
+    requirements: [text, option-continue=1]
+  - title: Make Shorter
+    icon: iconify:ic:round-short-text
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/shorter
+    requirements: [text, option-shorter=1]
+  - title: Make Longer
+    icon: iconify:bi:text-left
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/longer
+    requirements: [text, option-longer=1]
+  - title: Change Tone to Friendly
+    icon: iconify:bx:wink-smile
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/friendly
+    requirements: [text, option-friendly=1]
+  - title: Change Tone to Professional
+    icon: iconify:hugeicons:tie
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/professional
+    requirements: [text, option-friendly=1]
+  - title: Improve Writing
+    icon: iconify:mingcute:content-ai-line
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/improve
+    requirements: [text, option-improve=1]
+  - title: Translate
+    icon: iconify:ri:translate-ai
+    javascript: |
+      let url = 'raycast://extensions/muzhen_gaming/raycast-g4f/translate';
+      popclip.openUrl(url);
+      await sleep(500);
+      popclip.pressKey("cmd return");
+    requirements: [text, option-translate=1]
+  - title: Fix Code
+    icon: iconify:ri:code-ai-line
+    url: raycast://extensions/muzhen_gaming/raycast-g4f/fixCode
+    requirements: [text, option-fix=1]
+  - title: Generate Images
+    icon: iconify:ri:image-ai-line
+    requirements: [text, option-image=1]
+    javascript: |
+      let url = 'raycast://extensions/muzhen_gaming/raycast-g4f/genImage'
+      popclip.openUrl(url + 'fallbackText=' + popclip.input.text.trim());
+      await sleep(500);
+      popclip.pressKey("return");
