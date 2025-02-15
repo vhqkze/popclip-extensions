@@ -4,8 +4,14 @@ A Popclip extension to help you capture text and send it to [Raycast-G4F (GPT4Fr
 
 ## Screenshots
 
+<img width="216" alt="image" src="https://github.com/user-attachments/assets/34c5b5cb-249e-4dcf-9306-be35344b478f" />
+
+<br/>
+
+<img width="466" alt="image" src="https://github.com/user-attachments/assets/f67b01ff-49d7-4021-b177-b893bc218f03" />
 
 ## Actions
+
 - Explain
 - AskAI
 - Summarize
