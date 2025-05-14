@@ -1,0 +1,30 @@
+name: Things
+identifier: vhqkze.things
+icon: iconify:gg:check-r
+popclip version: 4688
+app:
+  name: Things
+  link: https://culturedcode.com/things/
+  bundle identifiers:
+    - com.culturedcode.ThingsMac
+  check installed: true
+module: things.ts
+options:
+  - identifier: withAppName
+    label:
+      en: with current app name
+      zh-hans: 包含 App 名称
+    type: boolean
+    default value: true
+  - identifier: showQuickEntry
+    label:
+      en: show quick entry dialog
+      zh-hans: 显示快速添加窗口
+    type: boolean
+    default value: true
+  - identifier: reveal
+    label:
+      en: reveal in Things
+      zh-hans: 查看新创建项目
+    type: boolean
+    default value: false
