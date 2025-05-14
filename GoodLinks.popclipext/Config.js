@@ -29,8 +29,8 @@ module.exports = {
 
         return {
             code() {
-                 let url = new URL('goodlinks://x-callback-url/save');
-                 url.searchParams.append('url', save_url);
+                let url = new URL('goodlinks://x-callback-url/save');
+                url.searchParams.append('url', save_url);
                 popclip.openUrl(url.href);
             },
         };

@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "types": ["@popclip/types"],
+        "target": "ESNext"
+    }
+}
