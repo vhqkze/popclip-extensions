@@ -1,0 +1,11 @@
+= 二维码
+vhqkze
+:keywords: popclip
+
+为选中文本生成二维码，右键子菜单可以生成条形码，需要安装以下软件：
+
+* https://github.com/swiftDialog/swiftDialog[swiftDialog] (`brew install swiftdialog`) 用于显示图片
+* https://fukuchi.org/en/works/qrencode/index.html[qrencode] (`brew install qrencode`) 用于生成二维码
+* https://www.zint.org.uk[zint] (`brew install zint`) 用于生成条形码
+
+如果同时按下 shift 键，则不会显示二维码/条形码，而是将生成的二维码/条形码图片复制到系统剪贴板。

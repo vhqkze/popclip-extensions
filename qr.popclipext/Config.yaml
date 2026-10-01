@@ -1,0 +1,7 @@
+name: QR
+identifier: vhqkze.qr
+icon: iconify:ic:baseline-qrcode
+description: Generate a QR code. qrencode and swiftdialog are required to be installed.
+popclip version: 6221
+module: main.ts
+entitlements: [script]

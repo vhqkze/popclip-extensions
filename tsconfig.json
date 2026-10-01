@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "types": ["@popclip/types"],
-        "target": "ESNext"
+        "target": "ESNext",
+        "moduleDetection": "force"
     }
 }

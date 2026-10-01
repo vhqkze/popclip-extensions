@@ -1,0 +1,26 @@
+#popclip
+name:
+  en: Search
+  da: Søg
+  de: Suchen
+  es: Buscar
+  fr: Rechercher
+  it: Cerca
+  ja: 検索
+  ko: 검색
+  nl: Zoek
+  pl: Szukaj
+  pt-BR: Busca
+  ru: Поиск
+  sk: Vyhľadať
+  sv: Sök
+  tr: Ara
+  uk: Пошук
+  vi: Tìm kiếm
+  zh-Hans: 搜索
+  zh-Hant: 搜尋
+identifier: vhqkze.search
+icon: bundle:search
+module: main.ts
+entitlements: [dynamic]
+popclip version: 6221
